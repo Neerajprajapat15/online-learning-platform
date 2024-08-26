@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/certification.css">
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+    <nav>
+        <div class="logo">
+            <img src="assets/images/logo.png" width="70px" height="70px" alt="Brand Logo">
+        </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a style="text-decoration: underline;" href="certification.html">Certification</a></li>
+            <li><a href="carrier.html">Carrier</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons">
+                <a href="#" target="_blank"> <i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i> </a>
+            </span>
+            <div class="signin-signup-mob">
+                <a href="signin.html"><button class="signin">SignIn</button></a>
+                <a href="signup.html"><button class="signup">SignUp</button></a>
+            </div>
+        </ul>
+        <div class="signin-signup">
+            <a href="signin.html"><button class="signin">SignIn</button></a>
+            <a href="signup.html"><button class="signup">SignUp</button></a>
+        </div>
+
+
+    </nav>
+
+    <!-- body -->
+
+    <main>
+
+        <div class="description">
+            <h2>Free Online courses and Certification</h2>
+            <h3 style="color: rgb(123, 141, 160);">Showing Results (40)</h3>
+            <div style="display: flex;">
+                <div class="dropdown">
+                    <button onclick="Function1(1)" class="dropbtn">Program</button>
+                    <div id="Dropdown-content1" class="dropdown-content">
+                      <p><span><input type="checkbox" id="checkbox"></span><span><label for="checkbox">Self Placed</label></span></p>
+                      <p><span><input type="checkbox" id="checkbox"></span><span><label for="checkbox">Certification</label></span></p>
+                      <p><span><input type="checkbox" id="checkbox"></span><span><label for="checkbox">Diploma</label></span></p>
+                      <p><span><input type="checkbox" id="checkbox"></span><span><label for="checkbox">UnderGraduate</label></span></p>
+                      <p><span><input type="checkbox" id="checkbox"></span><span><label for="checkbox">PostGraduate</label></span></p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="Function1(2)" class="dropbtn">levels</button>
+                    <div id="Dropdown-content2" class="dropdown-content">
+                        <p><span><input type="checkbox" id="checkbox"></span><span><label for="checkbox">Beginner</label></span></p>
+                        <p><span><input type="checkbox" id="checkbox"></span><span><label for="checkbox">Intermediate</label></span></p>
+                        <p><span><input type="checkbox" id="checkbox"></span><span><label for="checkbox">Expert</label></span></p>
+                        <p><span><input type="checkbox" id="checkbox"></span><span><label for="checkbox">All Level</label></span></p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="Function1(3)" class="dropbtn">Duration</button>
+                    <div id="Dropdown-content3" class="dropdown-content">
+                        <p><span><input type="checkbox" id="checkbox"></span><span><label for="checkbox">Less than 1 month</label></span></p>
+                        <p><span><input type="checkbox" id="checkbox"></span><span><label for="checkbox">1 month to 3 months</label></span></p>
+                        <p><span><input type="checkbox" id="checkbox"></span><span><label for="checkbox">3 months to 6 months</label></span></p>
+                        <p><span><input type="checkbox" id="checkbox"></span><span><label for="checkbox">6 months to 12 months</label></span></p>
+                        <p><span><input type="checkbox" id="checkbox"></span><span><label for="checkbox">More than 12 months</label></span></p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="Function1(4)" class="dropbtn">Learning Mode</button>
+                    <div id="Dropdown-content4" class="dropdown-content">
+                        <p><span><input type="checkbox" id="checkbox"></span><span><label for="checkbox">Online Self Study</label></span></p>
+                        <p><span><input type="checkbox" id="checkbox"></span><span><label for="checkbox">Online Classroom</label></span></p>
+                        <p><span><input type="checkbox" id="checkbox"></span><span><label for="checkbox">Blended Classroom</label></span></p>
+                        <p><span><input type="checkbox" id="checkbox"></span><span><label for="checkbox">Classroom</label></span></p>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div class="certification-container">
+            <div class="certification-courses course1">
+                <div class="about-course">
+                    <div class="logo">
+                        <img src="assets/images/Certification-Course/course1.jpeg" width="80%" height="80%" alt="">
+                    </div>
+                    <div class="about">
+                        <span>Google Cloud</span>
+                        <span>Fundamentals of Digital Marketing</span>
+                        <span>★★★★★  1702 reviews</span>
+                    </div>
+                    <div class="bookmark">
+                        <i style="background-color: transparent;" id="bookmark1" class="fa-regular fa-bookmark" onclick="bookmark_color(1)"></i>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Digital Marketing</span>
+                    <span>SEO</span>
+                    <span>SEM</span>
+                    <span>Content Marketing</span>
+                    <span>Email Marketing</span>
+                </div>
+
+                <div class="detail">
+                    <span style="color: green; font-weight: bold;">Free</span>
+                    <span><i class="fa-solid fa-chart-simple"></i>&nbsp Beginner</span>
+                    <span>Certification</span>
+                </div>
+                <button>Go to Free Course</button>
+            </div>
+            <div class="certification-courses course2">
+                <div class="about-course">
+                    <div class="logo">
+                        <img src="assets/images/Certification-Course/course2.png" width="70%" height="80%" alt="">
+                    </div>
+                    <div class="about">
+                        <span>Microsoft</span>
+                        <span>Exam AZ-900: Microsoft Azure Fundamentals</span>
+                        <span>★★★★★  1901 reviews</span>
+                    </div>
+                    <div class="bookmark">
+                        <i style="background-color: transparent;" id="bookmark2" class="fa-regular fa-bookmark" onclick="bookmark_color(2)"></i>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Microsoft security</span>
+                    <span>Microsoft Azure</span>
+                    <span>Networking</span>
+                    <span>Application Development</span>
+                    <span>Compliance</span>
+                </div>
+
+                <div class="detail">
+                    <span style="color: green; font-weight: bold;">Free</span>
+                    <span><i class="fa-solid fa-chart-simple"></i>&nbsp Beginner</span>
+                    <span>Certification</span>
+                </div>
+                <button>Go to Free Course</button>
+            </div>
+            <div class="certification-courses course3">
+                <div class="about-course">
+                    <div class="logo">
+                        <img src="assets/images/Certification-Course/course3.png" width="80%" height="80%" alt="">
+                    </div>
+                    <div class="about">
+                        <span>Great Learning</span>
+                        <span>Excel for Beginners</span>
+                        <span>★★★★★  1029 reviews</span>
+                    </div>
+                    <div class="bookmark">
+                        <i style="background-color: transparent;" id="bookmark3" class="fa-regular fa-bookmark" onclick="bookmark_color(3)"></i>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Excel's Basics</span>
+                </div>
+
+                <div class="detail">
+                    <span style="color: green; font-weight: bold;">Free</span>
+                    <span><i class="fa-solid fa-chart-simple"></i>&nbsp Beginner</span>
+                    <span>Certification</span>
+                </div>
+                <button>Go to Free Course</button>
+            </div>
+            <div class="certification-courses course4">
+                <div class="about-course">
+                    <div class="logo">
+                        <img src="assets/images/Certification-Course/course4.jpg" width="80%" height="80%" alt="">
+                    </div>
+                    <div class="about">
+                        <span>IIT Kanpur- Indian Institute of Technology Kanpur</span>
+                        <span>NPTEL Project Management Course</span>
+                        <span>★★★★★  1672 reviews</span>
+                    </div>
+                    <div class="bookmark">
+                        <i style="background-color: transparent;" id="bookmark4" class="fa-regular fa-bookmark" onclick="bookmark_color(4)"></i>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Project Management</span>
+                    <span>Risk Management</span>
+                </div>
+
+                <div class="detail">
+                    <span style="color: green; font-weight: bold;">Free</span>
+                    <span><i class="fa-solid fa-chart-simple"></i>&nbsp Beginner</span>
+                    <span>Certification</span>
+                </div>
+                <button>Go to Free Course</button>
+            </div>
+            <div class="certification-courses course5">
+                <div class="about-course">
+                    <div class="logo">
+                        <img src="assets/images/Certification-Course/course5.jpeg" width="80%" height="80%" alt="">
+                    </div>
+                    <div class="about">
+                        <span>TCS ion</span>
+                        <span>Carrier Edge - Young Professional</span>
+                        <span>★★★★★  1876 reviews</span>
+                    </div>
+                    <div class="bookmark">
+                        <i style="background-color: transparent;" id="bookmark5" class="fa-regular fa-bookmark" onclick="bookmark_color(5)"></i>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Accounting</span>
+                    <span>Excel</span>
+                    <span>Soft Skill</span>
+                    <span>Communication Skill</span>
+                </div>
+
+                <div class="detail">
+                    <span style="color: green; font-weight: bold;">Free</span>
+                    <span><i class="fa-solid fa-chart-simple"></i>&nbsp Beginner</span>
+                    <span>Certification</span>
+                </div>
+                <button>Go to Free Course</button>
+            </div>
+            <div class="certification-courses course6">
+                <div class="about-course">
+                    <div class="logo">
+                        <img src="assets/images/Certification-Course/course6.png" width="80%" height="80%" alt="">
+                    </div>
+                    <div class="about">
+                        <span>Internshala</span>
+                        <span>Digital Marketing Training</span>
+                        <span>★★★★★  1098 reviews</span>
+                    </div>
+                    <div class="bookmark">
+                        <i style="background-color: transparent;" id="bookmark6" class="fa-regular fa-bookmark" onclick="bookmark_color(6)"></i>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Digital Marketing</span>
+                    <span>SEO</span>
+                    <span>Content Marketing</span>
+                    <span>Online Marketing</span>
+                </div>
+
+                <div class="detail">
+                    <span style="color: green; font-weight: bold;">Free</span>
+                    <span><i class="fa-solid fa-chart-simple"></i>&nbsp Beginner</span>
+                    <span>Certification</span>
+                </div>
+                <button>Go to Free Course</button>
+            </div>
+            <div class="certification-courses course7">
+                <div class="about-course">
+                    <div class="logo">
+                        <img src="assets/images/Certification-Course/course7.png" width="80%" height="80%" alt="">
+                    </div>
+                    <div class="about">
+                        <span>DeepLearning.io</span>
+                        <span>AI For Eveyone</span>
+                        <span>★★★★★  987 reviews</span>
+                    </div>
+                    <div class="bookmark">
+                        <i style="background-color: transparent;" id="bookmark7" class="fa-regular fa-bookmark" onclick="bookmark_color(7)"></i>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Data Science</span>
+                </div>
+
+                <div class="detail">
+                    <span style="color: green; font-weight: bold;">Free</span>
+                    <span><i class="fa-solid fa-chart-simple"></i>&nbsp Beginner</span>
+                    <span>Certification</span>
+                </div>
+                <button>Go to Free Course</button>
+            </div>
+
+            <div class="certification-courses course8">
+                <div class="about-course">
+                    <div class="logo">
+                        <img src="assets/images/Certification-Course/course8.jpg" width="80%" height="80%" alt="">
+                    </div>
+                    <div class="about">
+                        <span>Coursera</span>
+                        <span>Foundation Of User Experience (UX) Design</span>
+                        <span>★★★★★  1437 reviews</span>
+                    </div>
+                    <div class="bookmark">
+                        <i style="background-color: transparent;" id="bookmark8" class="fa-regular fa-bookmark" onclick="bookmark_color(8)"></i>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Networking</span>
+                    <span>Software testing</span>
+                    <span>Simulation</span>
+                </div>
+
+                <div class="detail">
+                    <span style="color: green; font-weight: bold;">Free</span>
+                    <span><i class="fa-solid fa-chart-simple"></i>&nbsp Beginner</span>
+                    <span>Certification</span>
+                </div>
+                <button>Go to Free Course</button>
+            </div>
+
+            <div class="certification-courses course9">
+                <div class="about-course">
+                    <div class="logo">
+                        <img src="assets/images/Certification-Course/course9.png" width="80%" height="80%" alt="">
+                    </div>
+                    <div class="about">
+                        <span>UDEMY</span>
+                        <span>Data Science with Python</span>
+                        <span>★★★★★  1378 reviews</span>
+                    </div>
+                    <div class="bookmark">
+                        <i style="background-color: transparent;" id="bookmark9" class="fa-regular fa-bookmark" onclick="bookmark_color(9)"></i>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Python</span>
+                    <span>Data Visualation</span>
+                    <span>Data Science</span>
+                    <span>GIT</span>
+                    <span>Operation</span>
+                </div>
+
+                <div class="detail">
+                    <span style="color: green; font-weight: bold;">Free</span>
+                    <span><i class="fa-solid fa-chart-simple"></i>&nbsp Beginner</span>
+                    <span>Certification</span>
+                </div>
+                <button>Go to Free Course</button>
+            </div>
+
+            <div class="certification-courses course10">
+                <div class="about-course">
+                    <div class="logo">
+                        <img src="assets/images/Certification-Course/course10.jpeg" width="80%" height="80%" alt="">
+                    </div>
+                    <div class="about">
+                        <span>Corporate Finance Institue</span>
+                        <span>Accounting Fundamentals Course</span>
+                        <span>★★★★★  1744 reviews</span>
+                    </div>
+                    <div class="bookmark">
+                        <i style="background-color: transparent;" id="bookmark10" class="fa-regular fa-bookmark" onclick="bookmark_color(10)"></i>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Accounting</span>
+                    <span>Financial Modelling</span>
+                </div>
+
+                <div class="detail">
+                    <span style="color: green; font-weight: bold;">Free</span>
+                    <span><i class="fa-solid fa-chart-simple"></i>&nbsp Beginner</span>
+                    <span>Certification</span>
+                </div>
+                <button>Go to Free Course</button>
+            </div>
+        </div>
+         
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="box box1">
+            <img src="assets/images/logo.png" width="110px" height="110px" alt="Brand Logo">
+        </div>
+        <div class="box box2">
+            <span>Contact Us:</span>
+            <span><i class="fa-solid fa-phone" style="color: white;"></i>&nbsp +91 00000 00000</span>
+            <span><i class="fa-solid fa-envelope" style="color: white;"></i>&nbsp nrjinfinity123@gmail.com</span>
+            <div class="link">
+                <a href="#" target="_blank"> <i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i> </a>
+            </div>
+
+        </div>
+        <div class="box box3">
+            <p>Copyright &copy; 2024 NRJ Infinity</p>
+            <p>All rights reserved.</p>
+        </div>
+        <div class="box box4">
+            <a href="#" target="_blank"><i class="fa-solid fa-location-dot" style="color: white;"></i></i> </a>
+            <p><b>Address:-</b> 14 Jeevan vihar colony rampura road sanganer jaipur 302029</p>
+        </div>
+    </footer>
+
+
+    <script src="js/certification.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

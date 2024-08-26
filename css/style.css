@@ -1,0 +1,430 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  background: rgb(26, 26, 26);
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .mainMenu {
+  margin-right: 20px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 13px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  font-size: 20px;
+  transition: 0.5s ease;
+  border-radius: 60px;
+}
+
+nav .mainMenu li a:hover {
+  background-color: white;
+  color: black;
+  
+}
+
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icons i, .signin-signup-mob {
+  color: white;
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+.signin-signup-mob button {
+  margin: 7px;
+  height: 35px;
+  width: 85px;
+  font-size: 15px;
+  background-color: rgb(98, 0, 190);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signin-signup-mob{
+  margin-top: 30px;
+ }
+
+.fa-facebook:hover {
+  color: rgb(0, 110, 255);
+}
+
+.fa-linkedin:hover {
+  color: rgb(86, 154, 243);
+}
+
+.fa-instagram:hover {
+  color: rgb(255, 0, 191);
+}
+
+.fa-whatsapp:hover {
+  color: rgb(0, 255, 38);
+}
+
+nav .logo img{
+  margin-left: 20px;
+  border-radius: 100%;
+}
+
+.signin-signup button {
+  margin: 2px;
+  height: 35px;
+  width: 85px;
+  font-size: 15px;
+  background-color: rgb(98, 0, 190);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signin-signup{
+ display: flex;
+ flex-direction: row;
+ margin-right: 10px;
+}
+.signin-signup button:hover {
+  scale: 1.1;
+  transition-duration: 0.7s;
+}
+
+@media (max-width: 800px) {
+  nav .mainMenu {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(26, 26, 26);
+    transition: ease 0.5s;
+    display: none;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .openMenu {
+    display: block;
+  }
+
+  nav .mainMenu li a:hover {
+    background: none;
+    color: orangered;
+  }
+
+  .icons i {
+    display: inline-block;
+    padding: 13px;
+  }
+
+  .signin-signup {
+    display: none;
+  }
+
+  .signin-signup-mob{
+    display: block;
+  }
+
+}
+
+/* Main body */
+main {
+  background-color: rgb(224, 223, 223);
+  height: auto;
+  width: 100%;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative; 
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next{
+  background-color: transparent;
+  border: 1px solid rgb(17, 0, 255) ;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 20px;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: -25px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 100%;
+}
+
+.next {
+  margin-right: 20px; 
+  width: 40px;
+  height: 40px;
+  right: 0;
+  border-radius: 100%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.recomended-course-container h1{
+  margin-left: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.recomended-course{
+  gap: 15px;
+  margin: 15px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card{
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 4px 4px gray;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  
+}
+
+.card:hover{
+  scale: 1.05;
+}
+
+.course-thumbnail{
+  background-size: cover;
+}
+
+.course-thumbnail img{
+  border-radius: 10px 10px 0 0;
+}
+
+.course-about{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 5px;
+}
+
+@media (max-width: 800px) {
+  .recomended-course{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* trusted companies */
+
+.trusted-companies{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  background-color: white;
+  color: rgb(75, 74, 74);
+  text-align: center;
+}
+
+.companies-name{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+@media (max-width: 800px) {
+  .companies-name{
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* feedback */
+
+.feedback{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px;
+  gap: 10px; 
+
+}
+
+.feedback-box{
+  border: 1px solid black;
+  padding: 20px;
+  font-size: large;
+  border-radius: 10px;
+}
+
+.name-image{
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  gap: 15px;
+  font-size: 15px;
+  color: rgb(37, 37, 37);
+}
+
+.image img{
+  border-radius: 100%;
+}
+
+@media (max-width: 800px) {
+  .feedback{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* footer */
+
+footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgb(26, 26, 26);
+  height: 150px;
+  overflow-x: hidden;
+
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+.box1 img {
+ border-radius: 100%;
+}
+
+.box1 {
+  border-right: 1px solid white;
+}
+
+.box2 {
+  border-right: 1px solid white;
+}
+
+.box3 {
+  border-right: 1px solid white;
+  line-height: 2;
+}
+
+.box4 p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.box4 i {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.link a {
+  text-decoration: none;
+  color: white;
+  margin: 4px;
+  font-size: 24px;
+}
+
+.link {
+  margin-top: 20px;
+}
+
+
+
+@media (max-width: 800px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: rgb(26, 26, 26);
+    height: auto;
+    gap: 20px;
+  }
+
+  .box1 img {
+    margin-top: 10px;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    border: none;
+  }
+
+  .link {
+    margin-top: 20px;
+  }
+}
+
