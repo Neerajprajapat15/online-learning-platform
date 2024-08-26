@@ -269,10 +269,6 @@ td a{
   font-weight: bold;
 }
   
-  
-  
-  
-  
   /* footer */
   
   footer {
@@ -280,7 +276,6 @@ td a{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background-color: rgb(26, 26, 26);
-    /* #212529 */
     height: 150px;
     overflow-x: hidden;
   

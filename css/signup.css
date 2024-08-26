@@ -178,7 +178,6 @@
 
  .signin-container{
   background-image: linear-gradient(to bottom right, purple, pink);
-  /* background-image: linear-gradient(to bottom right, rgb(30, 30, 30), white); */
   height: auto;
   max-width: 1000px;
   text-align: center;
@@ -262,7 +261,6 @@
 
 .signin-container{
 background-image: linear-gradient(to bottom right, purple, pink);
-/* background-image: linear-gradient(to bottom right, rgb(30, 30, 30), white); */
 height: auto;
 max-width: 1000px;
 text-align: center;
@@ -338,14 +336,6 @@ font-weight: bold;
 .signup-option{
 margin-top: 30px;
 }
-
-
-
-
-
-
-  
-  
   
   /* footer */
   
@@ -354,7 +344,6 @@ margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background-color: rgb(26, 26, 26);
-    /* #212529 */
     height: 150px;
     overflow-x: hidden;
   
